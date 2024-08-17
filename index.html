@@ -1,52 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  <!-- Sign-up form start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+     <section class="modal">
 
-  Stay updated!
+    <section class="left-column">
+      <h1>Stay updated!</h1>
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+      <ul>
+        <li>
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+            <path d="M6 11.3812L8.73464 14L15 8" stroke="white" stroke-width="2"/>
+            </svg>            
+          <p>Product discovery and building what matters</p>
+        </li>
+        <li>
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+            <path d="M6 11.3812L8.73464 14L15 8" stroke="white" stroke-width="2"/>
+            </svg>
+            
+          <p>Measuring to ensure updates are a success</p>
+        </li>
+        <li>
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+            <path d="M6 11.3812L8.73464 14L15 8" stroke="white" stroke-width="2"/>
+            </svg>
+            
+          <p>And much more!</p>
+        </li>
+      </ul>
+      <form action="">
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder=" email@company.com"
+        />
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
 
-  Email address
-  email@company.com
+    <section class="right-column">
+      <picture>
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+      </picture>
+    </section>
 
-  Subscribe to monthly newsletter
+  </section>
 
-  <!-- Sign-up form end -->
+    <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+    <!-- Success message start -->
 
-  Thanks for subscribing!
+    <article class="confirmation">
+      <img src="./assets/images/icon-success.svg" alt="" />
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span> ash@loremcompany.com. </span> Please open it and click the button
+        inside to confirm your subscription.
+      </p>
 
-  Dismiss message
+      <button>Dismiss message</button>
+    </article>
 
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Success message end -->
+
+   
+  </body>
 </html>

@@ -1,0 +1,89 @@
+$primary-color: hsl(4, 100%, 67%);
+$main-dark: hsl(234, 29%, 20%);
+$text-color: hsl(235, 18%, 26%);
+$neutral-white: hsl(0, 0%, 100%);
+$neutral-grey: hsl(231, 7%, 60%);
+
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: $font-weight-normal;
+    font-style: normal;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $main-dark;
+}
+
+h1{
+    font-size: 56px;
+    font-family: "Roboto", sans-serif;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    gap:8px;
+     
+}
+
+
+.modal{
+    display: flex;
+    background-color: $neutral-white;
+    border-radius: 36px;
+    
+    .left-column{
+        padding: 64px;
+        gap:24px;
+    }
+
+    .right-column{
+        padding: 24px 24px 24px 0;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+
+    label{
+        font-size: 12px;
+        font-weight: $font-weight-bold;
+    }
+
+    input{
+        padding: 16px 20px;
+        margin-bottom: 12px;
+        border-radius:8px;
+        border: solid 1px $neutral-grey;
+
+        &::placeholder{
+            font-size: 16px;
+            color:$main-dark;
+            opacity: 50%;
+        }
+    }
+
+    button{
+        padding: 16px 24px;
+        border-radius:8px;
+        border: none;
+        background-color: $main-dark;
+        color: $neutral-white;
+        font-weight: $font-weight-bold;
+    }
+
+    }
+
+.confirmation{
+    display: none;
+}

@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(235, 18%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+}
+
+h1 {
+  font-size: 56px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 36px;
+}
+.modal .left-column {
+  padding: 64px;
+  gap: 24px;
+}
+.modal .right-column {
+  padding: 24px 24px 24px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+form label {
+  font-size: 12px;
+  font-weight: 700;
+}
+form input {
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: solid 1px hsl(231, 7%, 60%);
+}
+form input::placeholder {
+  font-size: 16px;
+  color: hsl(234, 29%, 20%);
+  opacity: 50%;
+}
+form button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.confirmation {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
