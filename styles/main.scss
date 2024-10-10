@@ -1,3 +1,6 @@
+@import "resetter.scss";
+
+
 $primary-color: hsl(4, 100%, 67%);
 $main-dark: hsl(234, 29%, 20%);
 $text-color: hsl(235, 18%, 26%);
@@ -14,9 +17,10 @@ body{
     font-style: normal;
     color: $text-color;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: $main-dark;
 }
 
@@ -27,21 +31,43 @@ h1{
     line-height: 100%;
 }
 
-ul li{
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+li{
     display: flex;
     align-items: center;
     gap:8px;
      
 }
 
+button{
+    padding: 16px 24px;
+    border-radius:8px;
+    border: none;
+    background-color: $main-dark;
+    color: $neutral-white;
+    font-weight: $font-weight-bold;
+    cursor: pointer;
+}
+
 
 .modal{
+    position: relative;
+    z-index: -1;
     display: flex;
     background-color: $neutral-white;
     border-radius: 36px;
+    align-items: center;
     
     .left-column{
         padding: 64px;
+        display: flex;
+             flex-direction: column;
         gap:24px;
     }
 
@@ -73,17 +99,40 @@ form{
         }
     }
 
-    button{
-        padding: 16px 24px;
-        border-radius:8px;
-        border: none;
-        background-color: $main-dark;
-        color: $neutral-white;
+ 
+
+    }
+
+.confirmation {
+    position: absolute;
+    // visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 504px;
+    height: auto;
+    background-color: $neutral-white;
+    padding: 40px;
+    gap:36px;
+    border-radius: 36px;
+    visibility: hidden;
+
+    span{
         font-weight: $font-weight-bold;
     }
 
+    img{
+        height: 64px;
+        width: 64px;
     }
 
-.confirmation{
-    display: none;
+    .message{
+        display: flex;
+        flex-direction: column;
+        gap:24px;
+    }
+}
+
+.visible{
+    opacity: 1;
+    visibility: visible;
 }

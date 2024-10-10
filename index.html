@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- Sign-up form start -->
-     <section class="modal">
+     <section class="modal" id="modal">
 
     <section class="left-column">
       <h1>Stay updated!</h1>
@@ -58,7 +58,7 @@
           <p>And much more!</p>
         </li>
       </ul>
-      <form action="">
+      <form id="form" novalidate>
         <label for="email">Email address</label>
         <input
           type="email"
@@ -66,7 +66,7 @@
           name="email"
           placeholder=" email@company.com"
         />
-        <button type="submit">Subscribe to monthly newsletter</button>
+        <button type="submit" id="main-cta">Subscribe to monthly newsletter</button>
       </form>
     </section>
 
@@ -76,26 +76,30 @@
       </picture>
     </section>
 
+    
   </section>
 
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
 
-    <article class="confirmation">
+    <article class="confirmation" id="confirmation">
       <img src="./assets/images/icon-success.svg" alt="" />
 
+      <div class="message">
       <h1>Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to
         <span> ash@loremcompany.com. </span> Please open it and click the button
         inside to confirm your subscription.
       </p>
+    </div>
 
-      <button>Dismiss message</button>
+      <button id="dismiss-btn">Dismiss message</button>
     </article>
 
     <!-- Success message end -->
+
 
    
   </body>
